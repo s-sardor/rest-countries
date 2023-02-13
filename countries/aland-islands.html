@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rest-countries/germany</title>
+    <link rel="stylesheet" href="../css/col.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="content">
+    <!-- header -->
+    <header>
+        <div class="container fill-h">
+            <div id="header-menu" class="row middle between fill-h">
+                <div class="row middle left column-6">
+                    <h1 id="logo" class="text-large">Where in the world?</h1>
+                </div>
+                <div class="row middle right column-6">
+                    <a href="#" id="theme-switch-btn">
+                        <i class='bx bx-moon'></i>
+                        <span>Dark Mode</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main>
+        <div class="container">
+
+            <!-- back -->
+            <div id="back">
+                <a id="back-btn" href="../index.html">Back</a>
+            </div>
+
+            <!-- main content -->
+            <div id="content" class="row middle between">
+
+                <div id="content-flag" class="row middle column-6 column-xl-6 column-lg-12 column-md-12 column-sm-12">
+                    <img src="../images/aland.svg" alt="flag">
+                </div>
+
+                <div id="content-text" class="row middle column-6 column-xl-6 column-lg-12 column-md-12 column-sm-12">
+                    <div class="row middle column-12">
+                        <div id="information-1" class="column-6 column-md-12">
+                            <h1>Åland Islands</h1>
+                            <h3 class="text-sm-bold">Native Name: <span class="text-sm-light">Deutschland</span></h3>
+                            <h3 class="text-sm-bold">Population: <span class="text-sm-light">83,190,556</span></h3>
+                            <h3 class="text-sm-bold">Region: <span class="text-sm-light">Europe</span></h3>
+                            <h3 class="text-sm-bold">Sub Region: <span class="text-sm-light">Western Europe</span></h3>
+                            <h3 class="text-sm-bold">Capital: <span class="text-sm-light">Berlin</span></h3>
+                        </div>
+
+                        <div id="textbook" class="row middle right left-md column-6 column-xl-6 column-lg-6 column-md-12">
+                            <div>
+                                <h3 class="text-sm-bold">Top Level Domain: <span class="text-sm-light">.be</span></h3>
+                                <h3 class="text-sm-bold">Currencies: <span class="text-sm-light">Euro</span></h3>
+                                <h3 class="text-sm-bold">Languages: <span class="text-sm-light">German</span></h3>
+                            </div>
+                        </div>
+
+                        <div id="border-countries" class="column-12 row middle">
+                            <div id="border-countries-title" class="column-xl-12">
+                                <span>Border Countries: </span>
+                            </div>
+                            <button class="secondary-btn">Poland</button>
+                            <button class="secondary-btn">Denmark</button>
+                            <button class="secondary-btn">Austria</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        elThemeSwitcher = document.querySelector('#theme-switch-btn');
+        elThemeSwitcher.addEventListener('click', function () {
+            document.body.classList.toggle('switchTheme');
+        })
+    </script>
+</body>
+
+</html>
